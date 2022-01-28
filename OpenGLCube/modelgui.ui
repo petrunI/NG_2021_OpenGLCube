@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModelGUI</class>
+ <widget class="QMainWindow" name="ModelGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ModelGUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="OpenGlCube" name="gl_cube">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>700</width>
+      <height>440</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_left">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🡸</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_up">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🡹</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_down">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>550</y>
+      <width>71</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🡻</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_right">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>290</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🡺</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGlCube</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">openglcube.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
