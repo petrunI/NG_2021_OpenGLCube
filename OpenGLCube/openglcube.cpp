@@ -107,11 +107,13 @@ void OpenGlCube::buildModel(float mWidth)
     }
 
     m_coords.create();
+    m_coords.bind();
     m_coords.allocate(vertexCoords.constData(), vertexCoords.size() * sizeof(VertexData));
+    m_coords.release();
 
     m_indexes.create();
     m_indexes.bind();
     m_indexes.allocate(indexes.constData(), indexes.size() * sizeof(GLuint));
-
+    m_coords.release();
 
 }
