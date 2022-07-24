@@ -16,6 +16,9 @@ public:
     ModelGUI(QWidget *parent = nullptr);
     ~ModelGUI();
 
+private slots:
+    void rotateUp();
+
 private:
     Ui::ModelGUI *ui;
 };

@@ -7,6 +7,7 @@
 #include <QOpenGLShaderProgram>
 #include <QOpenGLBuffer>
 #include <QOpenGLTexture>
+#include <QDebug>
 
 struct VertexData
 {
@@ -30,6 +31,9 @@ protected:
 
     void buildShader();
     void buildModel(float mWidth);
+
+private slots:
+    void rotateUp();
 
 private:
     int cubeWidth = 1;

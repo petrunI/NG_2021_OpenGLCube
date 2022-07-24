@@ -30,4 +30,7 @@ DISTFILES += \
     vshader.vsh
 
 RESOURCES += \
-    shaders.qrc
+    shaders.qrc \
+    texture.qrc
+
+LIBS += -lopengl32 -lglu32

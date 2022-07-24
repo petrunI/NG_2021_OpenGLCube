@@ -6,10 +6,17 @@ ModelGUI::ModelGUI(QWidget *parent)
     , ui(new Ui::ModelGUI)
 {
     ui->setupUi(this);
+
+    connect(ui->b_up, &QPushButton::pressed, gl_cube, &ModelGUI::rotateUp);
 }
 
 ModelGUI::~ModelGUI()
 {
     delete ui;
+}
+
+void ModelGUI::rotateUp()
+{
+
 }
 
